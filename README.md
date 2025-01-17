@@ -31,6 +31,19 @@ Pour le choix des modèles, nous recommandons d'utiliser des modèles récents e
 
 Vous pouvez également explorer d'autres modèles disponibles sur des plateformes comme Hugging Face.
 
+## LangChain
+
+LangChain est une bibliothèque puissante pour la construction de chaînes de traitement de langage naturel. Elle permet de combiner plusieurs modèles et techniques de traitement de texte pour créer des pipelines sophistiqués. LangChain facilite l'intégration de différentes étapes de traitement, telles que la tokenisation, l'analyse syntaxique, la génération de texte, et bien plus encore. Pour plus d'informations, consultez le dépôt GitHub de LangChain : https://github.com/langchain/langchain.
+
+## Base de données vectorielle
+
+Pour stocker et rechercher efficacement des vecteurs, vous pouvez utiliser des bases de données vectorielles. Voici quelques options populaires :
+
+- **Faiss** : Une bibliothèque de Facebook AI Research pour une recherche de similarité rapide et précise : https://github.com/facebookresearch/faiss
+- **Chroma** : Une base de données vectorielle rapide et évolutive pour les applications de machine learning : https://www.trychroma.com/
+
+Ces bases de données vous permettront de gérer efficacement les vecteurs générés par votre modèle de chatbot.
+
 ## Installation
 
 Instructions pour installer les dépendances et configurer l'environnement.
