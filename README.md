@@ -2,7 +2,7 @@
 
 ## Description
 
-Aflokkat_AI est un projet de chatbot personnalisé utilisant le Retrieval-Augmented Generation (RAG). Le projet est hébergé sur un ordinateur équipé de 2 RTX A4000 avec 16Go de RAM chacune.
+AfloChat est un projet de chatbot personnalisé utilisant le Retrieval-Augmented Generation (RAG). Le projet est hébergé sur un ordinateur équipé de 2 RTX A4000 avec 16Go de RAM chacune.
 
 ## Structure du projet
 
