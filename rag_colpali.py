@@ -5,6 +5,7 @@ import requests
 import torch
 from colpali_engine.models import ColQwen2, ColQwen2Processor
 from colpali_engine.utils.torch_utils import get_torch_device
+from IPython.display import display
 from peft import LoraConfig
 from PIL import Image
 from transformers.models.qwen2_vl import (Qwen2VLForConditionalGeneration,
@@ -126,6 +127,8 @@ images: List[Image.Image] = [
 # inference times for both indexing and generation. From my experiments, a scale of 512 pixels is a good default for
 # document tasks. Feel free to experiment with higher resolutions, especially if the text on your document is small.
 images = [scale_image(image, new_height=512) for image in images]
+for image in images:
+    display(scale_image(image, new_height=256))
 
 # Process the inputs
 batch_images = processor_retrieval.process_images(images).to(model.device)
@@ -147,7 +150,6 @@ retrieved_image_index = scores.argmax().item()
 retrieved_image = images[retrieved_image_index]
 
 print(f"Image retrieved for the following query: `{query}`")
-display(scale_image(retrieved_image, new_height=256))
 
 # Preprocess the inputs
 conversation = [
