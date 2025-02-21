@@ -1,52 +1,67 @@
-# AfloChat
+# 🤖 AfloChat
 
-## Description
+## 📝 Description
 
-AfloChat est un projet de chatbot personnalisé utilisant le Retrieval-Augmented Generation (RAG). Le projet est hébergé sur un ordinateur équipé de 2 RTX A4000 avec 16Go de RAM chacune.
+AfloChat is a customized chatbot project utilizing **Retrieval-Augmented Generation (RAG)**. It is designed to assist **students** and **staff** in a school setting by improving understanding of **courses, administrative documentation, and regulations**. 🏫📚 The chatbot tailors its responses based on the user’s profile (_student or staff_), the courses they have taken, or the department they belong to.
 
-## Structure du projet
+The project is hosted on a computer equipped with **two RTX A4000 GPUs**, each with **16GB of RAM**. 🚀💻
 
-- `src/` : Contient le code source du projet.
-- `data/` : Contient les données utilisées pour entraîner et tester le modèle.
-- `models/` : Contient les modèles entraînés.
-- `notebooks/` : Contient les notebooks Jupyter pour les POC et l'expérimentation.
-- `scripts/` : Contient les scripts utilitaires pour la gestion du projet.
-- `docs/` : Contient la documentation du projet.
-- `tests/` : Contient les tests unitaires et d'intégration.
-- `releases/` : Contient les versions publiées du projet.
+## 📂 Project Structure
 
-## Phase de Sourcing
+- 📜 **`src/`** : Contains the project's source code.
+- 📁 **`data/`** : Stores the data used to train and test the model.
+- 🎯 **`models/`** : Holds the trained models.
+- 📓 **`notebooks/`** : Includes Jupyter notebooks for POCs and experimentation.
+- ⚙️ **`scripts/`** : Contains utility scripts for project management.
+- 📑 **`docs/`** : Provides project documentation.
+- 🧪 **`tests/`** : Includes unit and integration tests.
+- 🚀 **`releases/`** : Stores published versions of the project.
 
-La phase de sourcing consiste à collecter et préparer les données nécessaires pour entraîner le modèle de chatbot. Voici les étapes à suivre :
+## 🔍 Data Sourcing Phase
 
-1. Collecte des données : Rassemblez les données pertinentes pour votre chatbot.
-2. Prétraitement des données : Nettoyez et formatez les données pour les rendre utilisables.
-3. Stockage des données : Enregistrez les données prétraitées dans le répertoire `data/`.
+The data sourcing phase consists of collecting and preparing the necessary information for training the chatbot. The steps involved are:
 
-## Choix des Modèles
+1. 📥 **Data Collection**: Gather relevant information, including **course materials, administrative documents, and regulations**.
+2. 🛠 **Data Preprocessing**: Clean and format the data to ensure usability.
+3. 💾 **Data Storage**: Save the preprocessed data in the `data/` directory.
 
-Pour le choix des modèles, nous recommandons d'utiliser des modèles récents et performants adaptés à votre cas d'utilisation. Voici quelques suggestions :
+## 🏆 Model Selection
 
-- **Mistral** : Pour des performances élevées en génération de texte et compréhension du langage naturel : https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
+For optimal performance, we recommend using recent and efficient language models suited to this use case. Some suggested models include:
 
-Vous pouvez également explorer d'autres modèles disponibles sur des plateformes comme Hugging Face.
+- 🚀 **Mistral**: A high-performance model for text generation and natural language understanding: [Mistral-Nemo-Instruct-2407](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
 
-## Installation
+Other models can be explored on platforms like **Hugging Face**.
 
-Instructions pour installer les dépendances et configurer l'environnement.
+## 🔗 LangChain Integration
 
-## Configuration
+[LangChain](https://github.com/langchain/langchain) is a powerful library for building **natural language processing pipelines**. It enables the combination of multiple models and text-processing techniques to create advanced workflows. LangChain facilitates tasks such as **tokenization, syntactic analysis, and text generation**. ⚡🤖
 
-Instructions pour configurer le projet, y compris les variables d'environnement et les fichiers de configuration nécessaires.
+## 🗄️ Vector Database
 
-## Utilisation
+To efficiently store and search for **vector embeddings**, the following vector databases are recommended:
 
-Instructions pour utiliser le chatbot.
+- 🔍 **[Faiss](https://github.com/facebookresearch/faiss)**: A library developed by **Facebook AI Research** for fast and accurate similarity search.
+- ⚡ **[Chroma](https://www.trychroma.com/)**: A scalable and high-speed vector database for machine learning applications.
 
-## Contribuer
+These databases enable efficient handling of the chatbot's **vectorized data**.
 
-Instructions pour contribuer au projet.
+## ⚙️ Installation
 
-## Licence
+📌 Instructions on how to **install dependencies** and **set up the environment**.
 
-Informations sur la licence du projet.
+## 🔧 Configuration
+
+📌 Guidelines for configuring the project, including **setting environment variables** and **required configuration files**.
+
+## 🖥️ Usage
+
+📌 Instructions on how to **interact with the chatbot**.
+
+## 🤝 Contributing
+
+📌 Guidelines for **contributing to the project**.
+
+## 📜 License
+
+📌 Information regarding the project's **license**. 📄
